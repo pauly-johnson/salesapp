@@ -1,4 +1,5 @@
 import React from 'react';
+import './item.css';
 
 const milkPrices = [
     {
@@ -61,16 +62,16 @@ const milkPrices = [
 
 const Milk = () => {
     return (
-        <div>
-            <h1>Milk Prices in Dunedin</h1>
-            <ul>
+        <div className="milk-container">
+            <h1 className="milk-title">Milk Prices in Dunedin</h1>
+            <ul className="milk-list">
                 {milkPrices.map((milk, index) => (
-                    <li key={index}>
-                        <h2>{milk.product}</h2>
-                        <p>Store: {milk.store}</p>
-                        <p>Price per unit: {milk.price_per_unit}</p>
-                        <p>Unit size: {milk.unit_size}</p>
-                        <p>Price per liter: {milk.price_per_liter}</p>
+                    <li key={index} className="milk-item">
+                        <h2 className="milk-product">{milk.product}</h2>
+                        <p className="milk-store">Store: {milk.store}</p>
+                        <p className="milk-price-per-unit">Price per unit: {milk.price_per_unit}</p>
+                        <p className="milk-unit-size">Unit size: {milk.unit_size}</p>
+                        <p className="milk-price-per-liter">Price per liter: {milk.price_per_liter}</p>
                     </li>
                 ))}
             </ul>
