@@ -41,3 +41,44 @@
 .milk-price-per-liter {
     margin: 5px 0;
 }
+.bread-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.bread-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.bread-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.bread-item {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.bread-product {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.bread-store,
+.bread-price-per-unit,
+.bread-unit-size,
+.bread-price-per-kilogram {
+    margin: 5px 0;
+}
