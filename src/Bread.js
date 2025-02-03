@@ -1,5 +1,6 @@
 import React from 'react';
 import './item.css';
+import Item from './Item';
 
 const breadPrices = [
     {
@@ -76,18 +77,22 @@ const breadPrices = [
 
 const Bread = () => {
     return (
-        <div className="bread-list">
+        <>
+        <h1 className="bread-title">Bread Prices in Dunedin</h1>
+        <div className="bread-container">
             {breadPrices.map((bread, index) => (
-                <div key={index} className="bread-item">
-                    <h3 className="bread-product">{bread.product}</h3>
-                    <p className="bread-store">Store: {bread.store}</p>
-                    <p className="bread-price">Price: ${bread.price_nzd.toFixed(2)} NZD</p>
-                    <p className="bread-unit-size">Unit Size: {bread.unit_size}</p>
-                    <p className="bread-price-per-100g">Price per 100g: ${bread.price_per_100g.toFixed(2)} NZD</p>
-                </div>
+                <Item
+                    key={index}
+                    title={bread.product}
+                    store={bread.store}
+                    price={bread.price_nzd}
+                    amount={bread.unit_size}
+                    pricePerLitre={bread.price_per_100g}
+                />
             ))}
         </div>
-    );
+        </>
+    )
 };
 
 export default Bread;

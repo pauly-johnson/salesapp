@@ -1,84 +1,51 @@
-/* item.css */
 
-.milk-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    margin: 10px;
-    border: 1px solid #ccc;
+.item-container {
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    max-width: 270px;
+    max-height: 250px;
     border-radius: 8px;
-    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 16px;
+    padding: 16px;
+    transition: box-shadow 0.3s ease;
 }
 
-.milk-title {
-    font-size: 24px;
+.item-container:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.item-title {
+    color: #333333;
+    font-size: 1.5em;
     font-weight: bold;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
 }
 
-.milk-list {
-    list-style-type: none;
-    padding: 0;
+.item-store {
+    color: #666666;
+    font-size: 1em;
+    margin-bottom: 16px;
 }
 
-.milk-item {
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    padding: 10px;
-    border-radius: 5px;
-    background-color: #fff;
-}
-
-.milk-product {
-    font-size: 20px;
-    font-weight: bold;
-}
-
-.milk-store,
-.milk-price-per-unit,
-.milk-unit-size,
-.milk-price-per-liter {
-    margin: 5px 0;
-}
-.bread-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    margin: 10px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    background-color: #f9f9f9;
-}
-
-.bread-title {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
-.bread-list {
-    list-style-type: none;
-    padding: 0;
-}
-
-.bread-item {
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    padding: 10px;
-    border-radius: 5px;
-    background-color: #fff;
-}
-
-.bread-product {
-    font-size: 20px;
+.item-price {
+    color: #ff6600;
+    font-size: 1.2em;
     font-weight: bold;
 }
 
-.bread-store,
-.bread-price-per-unit,
-.bread-unit-size,
-.bread-price-per-kilogram {
-    margin: 5px 0;
+.item-button {
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 1em;
+    padding: 10px 20px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.item-button:hover {
+    background-color: #0056b3;
 }
