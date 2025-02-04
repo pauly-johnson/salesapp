@@ -10,7 +10,6 @@ const Item = ({ title, store, price, amount, pricePer, isLitre }) => {
             <p className="item-amount">Amount: {amount}</p>
             {isLitre && <p className="item-price-per-litre">Price per Litre: ${pricePer}</p>}
             {!isLitre && <p className="item-price-per-100g">Price per 100g: ${pricePer}</p>}
-            {/* <p className="item-price-per-litre">Price per Litre: ${pricePerLitre}</p> */}
             <button className="item-button">Buy</button>
         </div>
     );

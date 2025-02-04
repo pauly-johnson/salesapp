@@ -9,7 +9,7 @@ import './App.css';
 function App() {
   return (
     <Router>
-      <div className="App">
+      <div className="app">
         <header className="App-header">
           <nav>
             <ul>
@@ -20,12 +20,15 @@ function App() {
             </ul>
           </nav>
         </header>
+        <div className='items'>
+
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/milk" element={<Milk />} />
           <Route path="/bread" element={<Bread />} />
         </Routes>
+        </div>
       </div>
     </Router>
   );

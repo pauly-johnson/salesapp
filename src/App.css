@@ -2,12 +2,43 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-align: center;
 }
 body {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  background-color: brown;
 }
-.App {
-  text-align: center;
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #333;
+  width: 100%;
+  height: 50px;
 }
-
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+nav ul li {
+  margin: 0 10px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+nav ul li a:hover {
+  color: yellow;
+}
+.items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
